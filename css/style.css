@@ -157,6 +157,11 @@ a:hover {
 .team {
   margin-top: 94px;
 }
+.regular-customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42/36);
+}
 
 /* Секція "PORTFOLIO" */
 
@@ -498,6 +503,32 @@ a:hover {
 }
 .header-logo {
   color: #2196f3;
+}
+
+/* Секція regular-customers */
+
+.regular-customers {
+  height: 372px;
+  width: 1600px;
+  margin: 0 auto;
+}
+.regular-customers-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 94px;
+}
+.regular-customers-list {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 30px;
+}
+.regular-customers-item {
+  width: 1174px;
+  height: 92px;
+  border: 1px solid black;
 }
 
 
