@@ -162,6 +162,11 @@ a:hover {
   font-size: 36px;
   line-height: calc(42/36);
 }
+.footer-title {
+  font-weight: 700;
+  color: #ffffff;
+}
+
 
 /* Секція "PORTFOLIO" */
 
@@ -539,12 +544,11 @@ a:hover {
 }
 .regular-customers-item:is(:hover, :focus) .regular-customers-icon {
   fill: #2196f3;
-  height: 92px;
-  width: 170px;
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  
 }
-
+.regular-customers-item:hover {
+  border: solid #2196f3;
+}
 
 
 /* Секція "FOOTER" */
@@ -576,6 +580,7 @@ a:hover {
   margin-top: 85px;
   margin-left: 180px;
 }
+
 
 /* Техніка грід */
 
