@@ -526,10 +526,25 @@ a:hover {
   gap: 30px;
 }
 .regular-customers-item {
-  width: 1174px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
   height: 92px;
-  border: 1px solid black;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
 }
+.regular-customers-icon {
+  fill: #AFB1B8;
+}
+.regular-customers-item:is(:hover, :focus) .regular-customers-icon {
+  fill: #2196f3;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
 
 
 /* Секція "FOOTER" */
