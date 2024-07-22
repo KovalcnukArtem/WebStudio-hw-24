@@ -1,13 +1,20 @@
+/* Змінні */
+
 :root {
   --main-color: #212121;
+  
   --second-color: #2196f3;
-
+  
   --third-color: #757575;
-
+  
   --fourth-color: #ffffff;
-
+  
   --fifth-color: #000000;
 }
+
+
+/* Контейнер */
+
 .container {
   width: 1200px;
   height: 100%;
@@ -16,6 +23,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* Шрифти */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -40,11 +50,9 @@ body {
   line-height: calc(16 / 14);
   color: #757575;
 }
-
 a:hover {
   color: #2196f3; /* Синій колір при наведенні */
 }
-
 .hero-flex {
   text-align: center;
   width: 1600px;
@@ -168,117 +176,6 @@ a:hover {
 }
 
 
-/* Секція "PORTFOLIO" */
-
-.container-two {
-  width: 1230px;
-  height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.portfolio {
-  display: flex;
-  margin-top: 94px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.portfolio-filter-list {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-.portfolio-filter-item {
-  margin-right: 8px;
-}
-
-.portfolio-filter-button {
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  border: none;
-  padding: 10px 20px;
-  color: #000000;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.portfolio-filter-button:hover {
-  background-color: #2196f3;
-  color: white;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-  margin-top: 30px;
-}
-
-.portfolio-item {
-  width: 364px; 
-  height: 404px; 
-  margin-bottom: 60px; /* Відступ між картинками */
-  border: 1px solid #F5F4FA; 
-  border-radius: none; 
-}
-.portfolio-item:hover {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-  transition:  0.4s;
-}
-
-.portfolio-headline {
-  margin-left: 23px;
-  margin-top: 15px;
-}
-
-.portfolio-text {
-  margin-left: 23px;
-  margin-top: 5px;
-}
-
-
-
-.one {
-  height: 38px;
-  width: 73px;
-  display: flex;
-  justify-content: center; /* Текст по горизонталі посередині кнопки */
-  align-items: center; /* Текст по вертикалі посередині кнопки */
-}
-.two {
-  height: 38px; 
-  width: 125px; 
-  display: flex;
-  justify-content: center; /* Текст по горизонталі посередині кнопки */
-  align-items: center; /* Текст по вертикалі посередині кнопки */
-}
-.three {
-  height: 38px;
-  width: 112px;
-  display: flex;
-  justify-content: center; /* Текст по горизонталі посередині кнопки */
-  align-items: center; /* Текст по вертикалі посередині кнопки */
-}
-.four {
-  height: 38px;
-  width: 103px;
-  display: flex;
-  justify-content: center; /* Текст по горизонталі посередині кнопки */
-  align-items: center; /* Текст по вертикалі посередині кнопки */
-}
-.five {
-  height: 38px;
-  width: 130px;
-  display: flex;
-  justify-content: center; /*Текст по горизонталі посередині кнопки */
-  align-items: center; /* Текст по вертикалі посередині кнопки */
-}
-
-
 /* Секція "HEADER" */
 
 .header-flex {
@@ -293,7 +190,6 @@ a:hover {
 .header-contact-list {
   display: flex; 
 }
-
 .header-nav-item, .header-contact-item {
   margin-left: 15px; /* Зовнішній відступ між елементами */
 }
@@ -330,9 +226,12 @@ a:hover {
 .header-contact-item:is(:hover, :focus) .contact-item {
   fill: #2196f3;
 }
+.contact-item {
+  fill: #757575;
+}
+
 
 /* Секція HERO */
-
 
 .hero {
   width: 1600px;
@@ -342,6 +241,7 @@ a:hover {
   background-image: url(../img/people.png);
   background-repeat: no-repeat;
 }
+
 
 /* Секція "ADVANTAGES" */
 
@@ -401,6 +301,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+
 /* Секція "EXAMPLES" */
 
 .examples {
@@ -423,9 +324,7 @@ a:hover {
 }
 
 
-
 /* Секція "TEAM" */
-
 
 .team-flex {
   display: flex;
@@ -436,12 +335,10 @@ a:hover {
   width: 1600px;
   background-color: #F5F4FA;
 }
-
 .team-list {
   display: flex;
   gap: 30px;
 }
-
 .team-item {
   display: flex;
   flex-direction: column;
@@ -449,23 +346,16 @@ a:hover {
   text-align: center;
   margin-top: 50px; /* Відступ до картинок */
 }
-
 .team-img {
   margin-bottom: 15px;
   height: 260px;
   width: 270px;
 }
-.team-signature {
-
-}
-
-
 .team-text {
   margin-top: 10px;
   color: #757575;
   margin-bottom: 28px;
 }
-
 .team-examples {
   height: 428px;
   width: 270px;
@@ -501,15 +391,6 @@ a:hover {
 }
 
 
-/* Доповнення до лінків */
-
-.studio {
-  color: #000000;
-}
-.header-logo {
-  color: #2196f3;
-}
-
 /* Секція regular-customers */
 
 .regular-customers {
@@ -544,7 +425,6 @@ a:hover {
 }
 .regular-customers-item:is(:hover, :focus) .regular-customers-icon {
   fill: #2196f3;
-  
 }
 .regular-customers-item:hover {
   border: solid #2196f3;
@@ -552,6 +432,7 @@ a:hover {
 
 
 /* Секція "FOOTER" */
+
 .footer-flex {
   display: flex;
   height: 252px;
@@ -582,14 +463,118 @@ a:hover {
 }
 
 
+/* Секція "PORTFOLIO" */
+
+.container-two {
+  width: 1230px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio {
+  display: flex;
+  margin-top: 94px;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-filter-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.portfolio-filter-item {
+  margin-right: 8px;
+}
+.portfolio-filter-button {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.portfolio-filter-button:hover {
+  background-color: #2196f3;
+  color: white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-top: 30px;
+}
+.portfolio-item {
+  width: 364px; 
+  height: 404px; 
+  margin-bottom: 60px; /* Відступ між картинками */
+  border: 1px solid #F5F4FA; 
+  border-radius: none; 
+}
+.portfolio-item:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  transition:  0.4s;
+}
+.portfolio-headline {
+  margin-left: 23px;
+  margin-top: 15px;
+}
+.portfolio-text {
+  margin-left: 23px;
+  margin-top: 5px;
+}
+.one {
+  height: 38px;
+  width: 73px;
+  display: flex;
+  justify-content: center; /* Текст по горизонталі посередині кнопки */
+  align-items: center; /* Текст по вертикалі посередині кнопки */
+}
+.two {
+  height: 38px; 
+  width: 125px; 
+  display: flex;
+  justify-content: center; /* Текст по горизонталі посередині кнопки */
+  align-items: center; /* Текст по вертикалі посередині кнопки */
+}
+.three {
+  height: 38px;
+  width: 112px;
+  display: flex;
+  justify-content: center; /* Текст по горизонталі посередині кнопки */
+  align-items: center; /* Текст по вертикалі посередині кнопки */
+}
+.four {
+  height: 38px;
+  width: 103px;
+  display: flex;
+  justify-content: center; /* Текст по горизонталі посередині кнопки */
+  align-items: center; /* Текст по вертикалі посередині кнопки */
+}
+.five {
+  height: 38px;
+  width: 130px;
+  display: flex;
+  justify-content: center; /*Текст по горизонталі посередині кнопки */
+  align-items: center; /* Текст по вертикалі посередині кнопки */
+}
+
+
+/* Доповнення до лінків */
+
+.studio {
+  color: #000000;
+}
+.header-logo {
+  color: #2196f3;
+}
+
+
 /* Техніка грід */
 
 .portfolio-item {
   flex-basis: calc((100% - 72px) / 3);
 }
-
-/* svg ЕЛЕМЕНТИ */
-.contact-item {
-  fill: #757575;
-}
-
