@@ -52,6 +52,7 @@ body {
 }
 a:hover {
   color: #2196f3; /* Синій колір при наведенні */
+  transition: all 1s;
 }
 .hero-flex {
   text-align: center;
@@ -85,6 +86,13 @@ a:hover {
   padding: 10px 20px; /* Відступи */
   border: none; /* Відсутність рамки */
   cursor: pointer; /* Зміна курсору при наведенні */
+}
+.hero-button:hover {
+  background-color: rgba(17, 77, 125, 1.00);
+  transition: all 200ms;
+}
+.hero-button:active {
+  background-color: #2196f3;
 }
 .business {
   display: block;
@@ -225,6 +233,7 @@ a:hover {
 }
 .header-contact-item:is(:hover, :focus) .contact-item {
   fill: #2196f3;
+  transition: all 1s;
 }
 .contact-item {
   fill: #757575;
@@ -382,6 +391,7 @@ a:hover {
 .team-social-item:is(:hover, :focus) {
   background-color: #2196f3;
   border-radius: 50px;
+  transition: all 1s;
 }
 .team-social-item:is(:hover, :focus) .team-social-icon {
   fill: #ffffff;
@@ -425,19 +435,23 @@ a:hover {
 }
 .regular-customers-item:is(:hover, :focus) .regular-customers-icon {
   fill: #2196f3;
+  transition: all 1s;
 }
 .regular-customers-item:hover {
   border: solid #2196f3;
+  transition: all 1s;
 }
 
 
 /* Секція "FOOTER" */
 
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: #2F303A;
+}
 .footer-flex {
   display: flex;
-  height: 252px;
-  width: 1600px;
-  background-color: #2F303A;
 }
 .footer-link {
   color: #2196f3;
@@ -457,20 +471,46 @@ a:hover {
 .footer-info {
   color: #757575;
 }
-.footer-adress {
-  margin-top: 85px;
-  margin-left: 180px;
-}
-.footer-title {
-  display: flex;
-  margin-top: 88px;
-  margin-left: 100px;
+.footer-flex {
+  align-items: center;
 }
 .footer-social {
   display: flex;
-  gap: 10px;
-  margin-top: 140px;
 }
+/* .footer-title {
+  margin-left: 50px;
+} */
+/* .footer-social-item {
+  margin-top: 150px;
+} */
+.footer-adress {
+  margin-right: 70px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.footer-social-item {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 50px;
+}
+.footer-social-item:is(:hover, :focus) {
+  background-color: rgba(33, 150, 243, 1.00);
+  border-radius: 50px;
+  transition: all 1s;
+}
+.footer-social-item:is(:hover, :focus) .footer-social-icon {
+  fill: #ffffff;
+}
+.footer-social-icon {
+  fill: #ffffff;
+}
+
 
 
 /* Секція "PORTFOLIO" */
