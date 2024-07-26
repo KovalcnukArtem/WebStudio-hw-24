@@ -449,6 +449,7 @@ a:hover {
   width: 1600px;
   height: 252px;
   background-color: #2F303A;
+  margin: auto;
 }
 .footer-flex {
   display: flex;
@@ -498,6 +499,7 @@ a:hover {
   width: 44px;
   background-color: rgba(255, 255, 255, 0.11);
   border-radius: 50px;
+  margin-left: 10px;
 }
 .footer-social-item:is(:hover, :focus) {
   background-color: rgba(33, 150, 243, 1.00);
@@ -509,6 +511,12 @@ a:hover {
 }
 .footer-social-icon {
   fill: #ffffff;
+}
+.footer-title {
+  margin-bottom: 10px;
+}
+.div {
+  margin-bottom: 40px;
 }
 
 
