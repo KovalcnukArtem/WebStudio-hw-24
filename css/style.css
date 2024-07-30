@@ -387,10 +387,10 @@ a:hover {
 .team-social-item {
   height: 44px;
   width: 44px;
+  border-radius: 50px;
 }
 .team-social-item:is(:hover, :focus) {
   background-color: #2196f3;
-  border-radius: 50px;
   transition: all 1s;
 }
 .team-social-item:is(:hover, :focus) .team-social-icon {
@@ -429,6 +429,7 @@ a:hover {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  cursor: pointer;
 }
 .regular-customers-icon {
   fill: #AFB1B8;
